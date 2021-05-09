@@ -39,3 +39,15 @@ for (var i = 0; i < studenti.length; i++) {
     document.getElementById('studenti').innerHTML += studenti[i].cognome + "<br>";
 }
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età
+var nomeUtente = prompt('Inserisci il tuo nome');
+var cognomeUtente = prompt('Inserisci il tuo cognome');
+var etàUtente = Number(prompt("Inserisci la tua età"));
+
+var datiUtente = {
+    nome: nomeUtente,
+    cognome: cognomeUtente,
+    age: etàUtente,
+}
+studenti.push(datiUtente);
+
+///
