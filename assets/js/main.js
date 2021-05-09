@@ -4,7 +4,6 @@ var studente = {
     cognome: "Vayne",
     age: 24,
 }
-
 // Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto
 for (var key in studente) {
     console.log(studente);
@@ -48,6 +47,12 @@ var datiUtente = {
     cognome: cognomeUtente,
     age: etàUtente,
 }
-studenti.push(datiUtente);
 
-///
+for (var i = 0; i < studenti.length; i++) {
+    if (datiUtente == true) {
+        datiUtente.push(studenti);
+    }
+}
+studenti = datiUtente;
+console.log(studenti);
+
