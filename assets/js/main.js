@@ -48,11 +48,8 @@ var datiUtente = {
     age: etàUtente,
 }
 
-for (var i = 0; i < studenti.length; i++) {
-    if (datiUtente == true) {
-        datiUtente.push(studenti);
-    }
-}
-studenti = datiUtente;
-console.log(studenti);
-
+/* for (var key in datiUtente) {
+    console.log(datiUtente);
+    studenti.push(datiUtente);
+    document.getElementById('tutti').innerHTML = studenti.values;
+} */
