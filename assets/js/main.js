@@ -6,7 +6,8 @@ var studente = {
 }
 // Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto
 for (var key in studente) {
-    console.log(studente);
+    var value = studente[key];
+    console.log(studente, value);
     document.getElementById('studente').innerHTML += [key] + ": " + studente[key] + "<br>";
 }
 // Creare un array di oggetti di studenti
@@ -34,8 +35,12 @@ var studenti = [
 ]
 // Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome
 for (var i = 0; i < studenti.length; i++) {
-    document.getElementById('studenti').innerHTML += studenti[i].nome + " ";
-    document.getElementById('studenti').innerHTML += studenti[i].cognome + "<br>";
+    var studenteEl = studenti[i];
+    var nome = studenteEl.nome;
+    var cognome = studenteEl.cognome;
+    console.log(nome, cognome);
+    /* document.getElementById('studenti').innerHTML += studenti[i].nome + " ";
+    document.getElementById('studenti').innerHTML += studenti[i].cognome + "<br>"; */
 }
 // Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età
 var nomeUtente = prompt('Inserisci il tuo nome');
