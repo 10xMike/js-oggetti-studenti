@@ -48,8 +48,24 @@ var datiUtente = {
     age: etàUtente,
 }
 
-/* for (var key in datiUtente) {
+studenti.push({nome: nomeUtente, cognome: cognomeUtente, age: etàUtente});
+
+for (var key in studenti) {
+        const element = studenti[key];
+        console.log(element.nome, element.cognome, element.age);
+}
+
+// Considerazioni e possibili soluzioni
+
+/* function pushList(){
+   return document.getElementById('tutti').innerHTML = ;
+} */
+/*  for (var key in datiUtente) {
     console.log(datiUtente);
     studenti.push(datiUtente);
-    document.getElementById('tutti').innerHTML = studenti.values;
 } */
+/* for (var i = 0; i < datiUtente.length; i++) {
+    var listaFinale;
+    listaFinale += datiUtente[i] + " ";
+}  */
+/*  console.log(studenti.indexOf(datiUtente.value)); */
